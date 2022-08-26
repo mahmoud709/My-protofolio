@@ -1,0 +1,204 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0 50px;
+  padding: 10%;
+}
+.project-image {
+  max-width: 420px;
+}
+.project-description h1 {
+  color: var(--primary-color);
+  font-size: 25px;
+  margin: 25px 0;
+}
+.project-image img {
+  width: 100%;
+}
+.projects .project1 {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  cursor: pointer;
+}
+.projects .project1 .project-description p{
+  color: var(--primary-color);
+}
+.projects .project1:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+
+}
+
+/* contact page */
+.contact-form,.contact-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .contact-row{
+  flex-direction: row;
+}
+.contact-form  input{
+  outline: none;
+  border: none;
+}
+.contact-form  input,.contact-form textarea{
+  border-radius: 10px;
+  width: 290px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px;
+  color: var(--secondary-color);
+  background-color:var(--main-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact-form textarea{
+  height: 90px;
+  resize: vertical;
+}
+.contact-form .button button {
+  background-color:var(--main-color);
+  color: var(--secondary-color);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact-form .button button a{
+    font-size: 25px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 20px;
+}
+::placeholder { 
+    color: var(--secondary-color);
+  font-size: 18px;
+}
+:-ms-input-placeholder { 
+    color: var(--secondary-color);
+  font-size: 18px;
+}
+::-ms-input-placeholder { 
+    color: var(--secondary-color);
+  font-size: 18px;
+}
+.contact-form  input[type=submit]{
+  cursor: pointer;
+}
+.contact-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 0 50px;
+}
+.contact-icons div {
+ box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+ padding: 20px;
+ cursor: pointer;
+ text-align: center;
+ border-radius:10px ;
+ -webkit-border-radius:10px ;
+ -moz-border-radius:10px ;
+ -ms-border-radius:10px ;
+ -o-border-radius:10px ;
+ border: 4px solid var(--white);
+ margin: 18px 0px;
+}
+
+.contact-icons div i {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: var(--main-color);
+}
+.contact-icons .mail a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.contact-icons .phone a{
+  text-decoration: none;
+}
+.contact-icons div p {
+  padding: 6px 0px;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact-me{
+  padding: 5% 10% ;
+  margin: 7% 0%;
+  max-width: 100%;
+  background-color: var(--main-color);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.contact-me .text h3{
+  width: 65%;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+.contact-me .btn button{
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+
+}
+/* End contact page */
+
+/* start footer */
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  padding: 0% 15% ;
+  background-color: var(--main-color);
+  max-height: 650px;
+
+}
+footer .col1 h2,h4,.col2 .quick-link a,.icons i{
+  color: var(--secondary-color);
+}
+ .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.col1 ,.col2 .quick-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column; 
+}
+.col2 .quick-link a{
+  margin: 15px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icons i{
+  font-size: 32px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.icons i:hover{
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+}
