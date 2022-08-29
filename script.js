@@ -42,15 +42,13 @@ let scroll_btn = document.querySelector(".scroll-btn");
 window.onscroll = function () {
   if (window.scrollY > 460) {
     scroll_btn.style.display = "block";
-  }
-  else {
-     scroll_btn.style.display = "none";
+  } else {
+    scroll_btn.style.display = "none";
   }
 };
 scroll_btn.onclick = function () {
   scroll(0, 0);
 };
-
 
 let section = document.querySelector(".about");
 let numbers = document.querySelectorAll(".num");
@@ -63,10 +61,10 @@ function startcount(el) {
     if (el.textContent == goal) {
       clearInterval(counter);
     }
-  }, 2000 / goal);
+  }, 4000 / goal);
 }
 window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop - 50) {
+  if (window.scrollY >= section.offsetTop - 30) {
     if (!start) {
       numbers.forEach((num) => startcount(num));
     }
@@ -75,3 +73,20 @@ window.onscroll = function () {
 };
 
 /*############################### */
+const sr = ScrollReveal({
+  origin: "right",
+  distance: "60px",
+  duration: 2800,
+  delay: 400,
+  reset: true,
+});
+window.onload = function () {
+  sr.reveal(`.home .person-image`, { delay: 500 });
+  sr.reveal(`.about .person-image`, { delay: 500, origin: "top" });
+  sr.reveal(`.skills .left-side`, { delay: 600, origin: "left" });
+  sr.reveal(`.mail`, { delay: 500, origin: "top" });
+  sr.reveal(`.phone `, { delay: 600, origin: "top" });
+  sr.reveal(`.address `, { delay: 700, origin: "top" });
+};
+
+// for swiper
